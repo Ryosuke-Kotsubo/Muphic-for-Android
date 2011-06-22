@@ -47,7 +47,7 @@ public class Title extends View{
 		startbotton=new Botton(getWidth()-getWidth()/4-50,getHeight()/2,startbbotton,startabotton);
 		contbotton=new Botton(getWidth()/4-75,getHeight()/2,contbbotton,contabotton);
 		if(touchAction==MotionEvent.ACTION_DOWN||touchAction==MotionEvent.ACTION_MOVE){
-			startbotton.changeflag(touchX, touchY,false);
+			startbotton.changeflag(touchX, touchY,false); //chaaaaange bottttorrrrn!!
 			endbotton.changeflag(touchX, touchY,false);
 			contbotton.changeflag(touchX, touchY,false);
 		}

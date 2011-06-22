@@ -308,3 +308,38 @@ java.io.IOException: Not in GZIP format
 
 !ENTRY com.android.ide.eclipse.adt 4 0 2011-06-16 15:42:19.686
 !MESSAGE Failed to load properties file for project 'Muphic'
+!SESSION 2011-06-22 14:15:29.603 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ja_JP
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product -data C:\Users\ryouichi\Muphic-for-Android -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2011-06-22 14:15:31.358
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.epp.usagedata.recording 2 0 2011-06-22 14:17:19.696
+!MESSAGE Could not connect to the usage data upload server at http://udc.eclipse.org/upload.php.
+!STACK 0
+java.net.ConnectException: Connection timed out: connect
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.PlainSocketImpl.doConnect(Unknown Source)
+	at java.net.PlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:80)
+	at org.apache.commons.httpclient.protocol.DefaultProtocolSocketFactory.createSocket(DefaultProtocolSocketFactory.java:122)
+	at org.apache.commons.httpclient.HttpConnection.open(HttpConnection.java:707)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeWithRetry(HttpMethodDirector.java:387)
+	at org.apache.commons.httpclient.HttpMethodDirector.executeMethod(HttpMethodDirector.java:171)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:397)
+	at org.apache.commons.httpclient.HttpClient.executeMethod(HttpClient.java:323)
+	at org.eclipse.epp.usagedata.internal.recording.uploading.BasicUploader.doUpload(BasicUploader.java:206)
+	at org.eclipse.epp.usagedata.internal.recording.uploading.BasicUploader.upload(BasicUploader.java:129)
+	at org.eclipse.epp.usagedata.internal.recording.uploading.BasicUploader$1.run(BasicUploader.java:105)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
